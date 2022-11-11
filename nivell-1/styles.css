@@ -61,7 +61,7 @@
     background-color: rgb(230,174,45);
 }
 
-    
+
     /* Mesures i disposició */
 
 .container{
@@ -132,6 +132,37 @@
         flex-wrap: wrap;
     }
     .box-2-1, .box-2-2{
+        width: 100%;
+    }
+}
+
+/* --- Adaptació versió MOBILE amb MEDIA QUERIES --- */
+
+@media screen and (max-width: 480px){
+    .box-2{
+        background-color: rgb(255,226,39);
+    }
+    .box-2-1{
+        background-color: rgb(12,80,112);
+        flex-direction: column;
+    }
+    .box-2-1 div:nth-child(n){
+        background-color: rgb(98,150,156);
+    }
+    .box-2-1 div:nth-child(5){
+        background-color: rgb(163,221,203);
+    }
+    .box-2-2{
+        background-color: rgb(251,123,85);
+    }
+    .box-2-2-1, .box-2-2-2{
+        background-color: rgb(250, 177, 105);
+    }
+    .box-1-1{
+        flex-direction: column;
+        gap: 1.3rem;
+    }
+    .box-1-1 div:nth-child(n), .box-2-1 div:nth-child(n) {
         width: 100%;
     }
 }
